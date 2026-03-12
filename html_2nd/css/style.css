@@ -1,0 +1,132 @@
+/* styling with id */
+#para1{
+    color:red;
+    background-color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    padding: 10px;
+    margin: 0;
+}
+
+/* style with class */
+.paraclass{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* underline all paragraphs */
+p{
+    text-decoration: underline;
+    margin: 0;
+}
+
+/* css grid */
+/* on each row indicate the grid area to appear as per number of partitions in the grid: e.g., 10 columns to work */
+#grid_container{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-areas:
+        "a a a a a a a a a a"
+        "b b c c c c c c d d"
+        "e e f f g g h h i i"
+        "j j j j j j j j j j";
+    gap: 5px;
+    margin: 10px;
+}
+
+/* GRID ITEMS */
+
+#divgrid_container{
+    grid-area: a;
+    background-color: ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#diva{
+    grid-area: b;
+    background-color: ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#divhero{
+    grid-area: c;
+    background-color: ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#div1{
+    grid-area: d;
+    background-color:;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#divform{
+    grid-area: e;
+    background-color: ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#divcard{
+    grid-area: f;
+    background-color: ;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#divform2{
+    grid-area: g;
+    background-color:;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#divcard2{
+    grid-area: h;
+    background-color: none;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+#divfooter{
+    grid-area: i;
+    background-color: ;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+#divfooter2{
+    grid-area: j;
+    background-color: gray;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* optional: responsive for small screens */
+@media (max-width: 768px){
+    #grid_container{
+        grid-template-areas:
+            "a a a a a a a a a a"
+            "b b c c c c c c d d"
+            "e e f f g g h h i i"
+            "j j j j j j j j j j";
+        grid-template-columns: repeat(10, 1fr);
+    }
+}
